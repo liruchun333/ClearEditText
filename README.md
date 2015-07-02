@@ -8,8 +8,8 @@
 也可在布局文件中设置：  
 `app:iconClear="@drawable/ic_clear"`  
 
-需要注意两点:
-1. 清除按钮会占据 `drawableRight` 的位置，所以 `ClearEditText` 设置 drawableRight 属性无效果;
+需要注意两点:  
+1. 清除按钮会占据 `drawableRight` 的位置，所以 `ClearEditText` 设置 drawableRight 属性无效果;  
 2. 在 `ClearEditText` 中实现了默认的 `TextWatcher`，便于更新清除按钮显示状态，
 如果要设置自定义的 `TextWarcher`，需要在接口方法 `afterTextChanged(Editable s)` 调用 `editText.updateIconClear();
 `，此方法用于更新清除按钮状态。
