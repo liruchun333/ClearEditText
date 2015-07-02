@@ -17,6 +17,7 @@
         android:drawablePadding="10dp"
         android:hint="@string/user_name_et_hint"
         android:textSize="16sp"
+        app:iconClear="@drawable/ic_clear_default_normal"
         />
     <com.liruchun.android.clearedittext.widget.ClearEditText
         android:id="@+id/et_use_password"
@@ -27,7 +28,7 @@
         android:drawablePadding="10dp"
         android:hint="@string/user_password_et_hint"
         android:textSize="16sp"
-        app:iconClear="@drawable/ic_clear_custom_normal"
+        app:iconClear="@drawable/ic_clear_default_normal"
         />
     <Button
         android:id="@+id/btn_login"
