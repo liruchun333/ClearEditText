@@ -28,6 +28,7 @@
         android:drawablePadding="10dp"
         android:hint="@string/user_password_et_hint"
         android:textSize="16sp"
+        android:inputType="textPassword"
         app:iconClear="@drawable/ic_clear_default_normal"
         />
     <Button

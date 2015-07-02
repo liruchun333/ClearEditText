@@ -3,6 +3,7 @@ package com.liruchun.android.clearedittext.widget;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
+import android.support.annotation.DrawableRes;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
@@ -51,7 +52,7 @@ public class ClearEditText extends EditText
         int iconClear =
                 typedArray.getResourceId(R.styleable.ClearEditText_iconClear, ICON_CLEAR_DEFAULT);
         drawableClear = getResources().getDrawable(iconClear);
-        setIconClear();
+        updateIconClear();
         typedArray.recycle();
 
         addTextChangedListener(new TextWatcher()
@@ -71,7 +72,7 @@ public class ClearEditText extends EditText
             @Override
             public void afterTextChanged(Editable s)
             {
-                setIconClear();
+                updateIconClear();
             }
         });
     }
@@ -95,9 +96,9 @@ public class ClearEditText extends EditText
     }
 
     /**
-     * 设置清除按钮图标
+     * 更新清除按钮图标显示
      */
-    public void setIconClear()
+    public void updateIconClear()
     {
         // 获取设置好的drawableLeft、drawableTop、drawableRight、drawableBottom
         Drawable[] drawables = getCompoundDrawables();
@@ -111,5 +112,15 @@ public class ClearEditText extends EditText
             setCompoundDrawablesWithIntrinsicBounds(drawables[0], drawables[1], null,
                     drawables[3]);
         }
+    }
+
+    /**
+     * 设置清除按钮图标样式
+     * @param resId 图标资源id
+     */
+    public void setIconClear(@DrawableRes int resId)
+    {
+        drawableClear = getResources().getDrawable(resId);
+        updateIconClear();
     }
 }
