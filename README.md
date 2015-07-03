@@ -12,4 +12,11 @@
 1. 清除按钮会占据 `drawableRight` 的位置，所以 `ClearEditText` 设置 `drawableRight` 属性无效果;  
 2. 在 `ClearEditText` 中实现了默认的 `TextWatcher`，便于更新清除按钮显示状态，
 如果要设置自定义的 `TextWatcher`，需要在接口方法 `afterTextChanged(Editable s)` 调用 `editText.updateIconClear();
-`，此方法用于更新清除按钮状态。
+`，此方法用于更新清除按钮状态。  
+
+显示效果：  
+![输入内容前][1]
+![输入内容后][2]
+
+[1]: https://github.com/liruchun333/ClearEditText/tree/master/screenshots/s1.jpg
+[2]: https://github.com/liruchun333/ClearEditText/tree/master/screenshots/s2.jpg
