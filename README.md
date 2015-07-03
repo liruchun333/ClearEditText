@@ -15,5 +15,5 @@
 `，此方法用于更新清除按钮状态。  
 
 显示效果：  
-<img src="/screenshots/s1.jpg" alt="screenshot" title="screenshot" width="270" height="486" />  
-<img src="/screenshots/s2.jpg" alt="screenshot" title="screenshot" width="270" height="486" />
+<img src="/screenshots/s1.jpg" alt="输入内容前" title="输入内容前" width="270" height="486" />
+<img src="/screenshots/s2.jpg" alt="输入内容后" title="输入内容后" width="270" height="486" />
