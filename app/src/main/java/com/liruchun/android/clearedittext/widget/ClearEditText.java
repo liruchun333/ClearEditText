@@ -19,11 +19,10 @@ import com.liruchun.android.clearedittext.R;
  */
 public class ClearEditText extends EditText
 {
-    /**
-     * 默认的清除按钮图标
-     */
+    /** 默认的清除按钮图标资源 */
     private static final int ICON_CLEAR_DEFAULT = R.drawable.ic_clear_default_normal;
 
+    /** 清楚按钮的图标 */
     private Drawable drawableClear;
 
     public ClearEditText(Context context)
@@ -55,6 +54,7 @@ public class ClearEditText extends EditText
         updateIconClear();
         typedArray.recycle();
 
+        // 设置TextWatcher用于更新清除按钮显示状态
         addTextChangedListener(new TextWatcher()
         {
             @Override
