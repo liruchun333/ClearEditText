@@ -10,7 +10,6 @@ import android.text.TextWatcher;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.EditText;
-import com.chexiu.sales.R;
 
 /**
  * 自带清除按钮的输入框，清除按钮的作用是清空输入框的输入内容；
