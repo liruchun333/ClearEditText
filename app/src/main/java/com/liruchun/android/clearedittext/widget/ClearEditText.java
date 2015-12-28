@@ -1,4 +1,4 @@
-package com.chexiu.sales.widget;
+package com.liruchun.android.clearedittext.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
